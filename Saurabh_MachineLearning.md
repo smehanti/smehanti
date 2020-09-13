@@ -1,3 +1,6 @@
+Hello , my name is Saurabh Mehanti and opted for Machine Learning
+
+
 # Machine Learning 
 
 It is mainly of 2 types.
