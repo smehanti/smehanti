@@ -1,14 +1,14 @@
-#Machine Learning 
+# Machine Learning 
 
 It is mainly of 2 types.
 
 1.Supervised 
 2.Unsupervised
 
-##Supervised Learning 
+## Supervised Learning 
 Includes:
 
-###Regression:
+### Regression:
 1.Simple Linear Regression.
 2.Multiple Linear Regression.
 3.Polynomial Linear Regression.
@@ -16,7 +16,7 @@ Includes:
 5.Decision Tree.
 6.Random Forest.
 
-###Classification:
+### Classification:
 1.Logistic Regression.
 2.K-Nearest Neighbour (KNN)
 3.Support Vector Machine (SVM)
@@ -25,15 +25,15 @@ Includes:
 6.Decision Tree.
 7.Random Forest.
 
-##Unsupervised Learning
+## Unsupervised Learning
 Includes:
 
-###Clustering:
+### Clustering:
 1.K-means Clustering.
 2.Hierarchical Clustering.
 3.Mean Shift.
 
-###Association:
+### Association:
 1.Apiori
 2.Eclat
 
