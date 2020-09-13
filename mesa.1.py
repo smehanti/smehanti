@@ -10,7 +10,6 @@ import getpass                                        #provides secure way to ha
 from translate import Translator                      #help in translating the input.
 import smtplib
 import speech_recognition as sr
-# import cv2
 
 
 engine = pyttsx3.init()
@@ -51,7 +50,7 @@ def sendMail(to,content):
     server= smtplib.SMTP('smtp.gmail.com',587)
     server.ehlo()
     server.starttls()
-    server.login('saurabhmehanti98@gmail.com','Saurabh@165')
+    server.login('YOUR_EMIALID','YOUR_PASSWORD')
     server.sendmail(email_s,to,content)
     server.close()
 
@@ -244,11 +243,6 @@ doin=['nothing , just chilling','dealing with you','well , right now i am talkin
       ,'just going for a round around globe']
 
 bye=['bye mesa','quit','see you soon mesa','goodbye','bye','bye bye','tata','see you soon','ok bye','now you may leave','toodles','okay toodles']
-
-cont={'my':9582079510,'mine':9582079510,'daddy':9818181509,'mom':9818181507,'richi':8130889345,'minnie':9599457720,'akshay':9818019980,'ayushi':9599289751
-      ,'bhavi':8368584354,'bhavya':8755085165,'devesh':9899981191,'dippi':6476853536,'harsh miglani':9999321523,'harshal':8800717503,'jazz':8588836809
-      ,'kanika':7011919607,'kanishka':9268191626,'kavya':9643690939,'kush':8826984921,'piyush singh':9811457033,'sahil khunger':9079999654
-      ,'sourabh rajput':8700344061,'yatharth':875075555,'swati':8826381050,'vipul':7290921223,'hardik':8755085040}
 
 than2=['thanks','thank you','thank you so much',"i'm thankful"]
 
@@ -567,21 +561,6 @@ while(True):
                 BroClose()
 
 
-        elif 'food' in a:
-            speak('what you want to eat ?')
-            eatt=takeCommand()
-            if eatt in neg:
-                speak('i think you are not hungry !')
-            else:
-                browser = webdriver.Chrome('/Users/saurabhmehanti/Downloads/chromedriver\ 5')
-                speak('you can order '+ eatt +'from here !')
-                browser.get('')
-
-
-
-
-
-
 
         elif 'made you' in a:
             speak(random.choice(devel1))
@@ -767,7 +746,7 @@ while(True):
                     print('your message: ')
                     content = takeCommand()
                     to = email_s
-                    print('From: saurabhmehanti98@gmail.com')
+                    print('From: YOUR_NAME')
                     print('To:',email_s)
                     print('send material:',content)
                     sendMail(to, content)
