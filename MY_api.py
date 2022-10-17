@@ -1,27 +1,17 @@
 from flask import Flask
-from flask import request
 import json
-# import requests
-# import requests_oauthlib
+import requests
+# import json
 # import random
 
 app = Flask(__name__)
-app.debug = True
+app.debug= True
 
 @app.route('/')
-def hi():
+def hello():
+    stud_det= {"name": "saurabh mehanti" , "student id":"200525033"}
+    return stud_det
 
-    return '<h1>Student Number : 200525033</h1>'
-
-#
-# @app.route('/webhook', methods=['POST','GET'])
-# def hello():
-#     body= request.json
-#     reply=body['queryResult']['parameters']['email']
-#
-#     # reply = '{"fullfillmentMessages": [{ "Text": {"text": ["The Temperature is 21 C"]}}]}'
-#     return 'your email is: ' + reply + ' . Thankyou'
-
-if __name__ == '__main__':
-    app.run()
-
+@app.route('/webhook' , methods=['POST', 'GET'])
+def Hullo():
+    one = {""}
